@@ -229,7 +229,7 @@ window.WebDatabase = (function(_settings){
 			
 			var filters = privateMethods.interpreter.filters(options.filter);
 			var orderBy = privateMethods.interpreter.orderBy(options.order);
-			var limit = privateMethods.interpreter.limit(options.order);
+			var limit = privateMethods.interpreter.limit(options.limit);
 			
 			var sql = "SELECT "+options.columns.join(", ")+" FROM "+options.table+" "+filters.sql+" "+orderBy+" "+limit;
 			publicMethods.query(sql, filters.params, function(tx, results){
