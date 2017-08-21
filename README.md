@@ -1,6 +1,6 @@
 
 # WebDatabase.js
-WebDatabase.js is a javascript library to abstract database interaction in browser.
+WebDatabase.js is a javascript library to abstract web database interaction on client side (e.g. browser).
 
 # Dependecy
 No other library is required.
